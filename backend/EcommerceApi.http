@@ -1,0 +1,14 @@
+@host = http://localhost:5205
+
+### Tambah: Kaos Polos Premium
+POST {{host}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Kaos Polos Premium",
+  "description": "Katun combed 24s, adem dan nyaman untuk harian.",
+  "price": 89000,
+  "stock": 120,
+  "category": "Kaos",
+  "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600"
+}
