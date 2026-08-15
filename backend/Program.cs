@@ -9,7 +9,7 @@ builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 // Add services to the container.
 builder.Services.AddControllers();
-builder.Services.AddOpenApi();
+// builder.Services.AddOpenApi();
 
 // Daftarin koneksi database PostgreSQL (lewat Npgsql)
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -29,10 +29,10 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+// if (app.Environment.IsDevelopment())
+// {
+//     app.MapOpenApi();
+// }
 
 // app.UseHttpsRedirection();
 
